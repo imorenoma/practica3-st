@@ -1,0 +1,20 @@
+4. POLITICAS DE EXPOTACION Y ORDEN DE PREFERENCIA EN LA SELECCION DE RUTAS
+--------------------------------------------------------------------------
+
+4.1 Los unicos router que deberian tener una lista de exportacion de rutas
+ son los router frontera de cada uno de los sistemas autonomos. En nuestro caso
+ deberiamos configurar los siguientes sistemas autonomos
+
+	AS10 --> As10-r1
+	AS20 --> As20-r1
+	AS30 --> As30-r1
+	AS40 --> As40-r1
+	AS50 --> As50-r1
+
+ Consideramos que AS60 al ser cliente generara anuncios solo a sus dos 
+proveedores.
+
+A continuacion configuramos las siguientes politicas de exportacion en estos 
+routers
+
+
